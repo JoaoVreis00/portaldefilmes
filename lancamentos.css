@@ -1,0 +1,41 @@
+.header{
+    background-color: black;
+}
+.logo{
+    width: 100px;
+    justify-content: center;
+}
+.menu_area{
+   margin-top: 20px;
+   margin-bottom: 15px;
+   justify-content: start;
+}
+.menu_area a{
+    background-color: black !important;
+    color: white !important;
+}
+.menu_area a:hover{
+    background-color: rgba(158, 140, 140, 0.808) !important;
+}
+.nav_area{
+    background-color: black !important;
+}
+.navbar-toggler{
+    background-color: white;
+}
+.browser{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.browser_area{
+    background-color: black !important;
+}
+.footer{
+    width: 100%;
+    background-color:#313332;
+    padding: 15px;
+    color: white;
+}
+.footer_img{
+    width: 100px;
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ffc851508f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portal de Filmes</title>
+</head>
+
+<body onload="carregaFilmes()">
+    <header class="container-fluid header">
+        <div class="row">
+            <div class="col-12 header_area">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <img class="logo" src="imgs/Logo_opc2_red.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 menu_area">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light nav_area">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="lancamentos.html">Lançamentos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Em destaque</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Avaliações</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Entrevistas e Making-Of</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Novidades</a>
+                                        </li>
+                                        <li>
+                                            <div class="col-sm-12 col-md-12 col-lg-12 browser">
+                                                <nav class="navbar navbar-light bg-light browser_area">
+                                                    <div class="container-fluid">
+                                                        <form class="d-flex">
+                                                            <input id="txtpesquisa" class="form-control me-2"
+                                                                type="text" placeholder="Pesquisar filme">
+                                                            <button onclick="pesquisaFilmes()" id="btnpesquisa"
+                                                                class="btn btn-outline-success"
+                                                                type="button">Pesquisar</button>
+                                                        </form>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container-fluid main">
+        <div class="titlle">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h1>Em destaque</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="movies" class="row Filmes">
+            <div class="col-3 card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.themoviedb.org/movie?language=pt-BR" class="btn btn-success"><i class="fas fa-plus"></i> Saiba mais</a>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.themoviedb.org/movie?language=pt-BR" class="btn btn-success"><i class="fas fa-plus"></i> Saiba mais</a>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.themoviedb.org/movie?language=pt-BR" class="btn btn-success"><i class="fas fa-plus"></i> Saiba mais</a>
+                </div>
+            </div>
+            <div class="col-3 card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="https://www.themoviedb.org/movie?language=pt-BR" class="btn btn-success"><i class="fas fa-plus"></i> Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="destaque">
+            <div class="row">
+                <!-- Início row -->
+                <div class="col-12">
+                    <!-- Início col-12 -->
+                    <div class="row">
+                        <!-- Início row -->
+
+
+                        <div class="avaliação">
+                            <div class=" row tittle_2">
+                                <div class="col-12">
+                                    <h1>Últimas avaliações</h1>
+                                </div>
+                            </div>
+                            <div class="row avaliation_area">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-4 col-lg-4 nome_avali_1">
+                                            <h2><i class="far fa-user-circle"></i></h2>
+                                            <h1>Cláudio Fernando</h1>
+                                            <p>Não dá pra ser bem crítico.... Todos já sabem o q esperar desse tipo de
+                                                filme... Lutas ,
+                                                pancadarias, monstros gigantes e muito ação em CGI.o filme realmente
+                                                entrega isso...
+                                                Agora nao vá esperando uma história envolvente com muita imersão de
+                                                personagens. Isso
+                                                não tem , até porque NAO E A PROPOSTA DO FILME. Tem uns críticos aqui no
+                                                blog q malharam
+                                                o filme, em relação a história e imersão de alguns personagens, . Cara
+                                                sério, vai ver 50
+                                                tons de cinza , cisne negro etc.... O filme realmente entrega o q o
+                                                espectador busca...
+                                                PANCADARIAS COLOSSAIS...</p>
+                                            <p><i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                11/04/2021
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4 col-lg-4 nome_avali_2">
+                                            <h2><i class="far fa-user-circle"></i></h2>
+                                            <h1>Flavinho do pneu</h1>
+                                            <p>“A ação se destaca ao longo do filme de uma forma grande e turbulenta,
+                                                arrebatada pela
+                                                trilha sonora dinâmica de Junkie XL. Com exceção dos papéis
+                                                desempenhados por Demián
+                                                Bichir, o sempre divertido Brian Tyree Henry e a estreante Kaylee
+                                                Hottle, que vem de uma
+                                                família totalmente surda, os personagens humanos tendem a ficar em
+                                                segundo plano. Mas o
+                                                que realmente importa é a luta dos titãs, e nesse sentido poucos devem
+                                                reclamar”.</p>
+                                            <p><i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                09/04/2021
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4 col-lg-4 nome_avali_3">
+                                            <h2><i class="far fa-user-circle"></i></h2>
+                                            <h1>Paulino o crítico</h1>
+                                            <p>O final de Kong: A Ilha da Caveira (que eu achei um ótimo filme), já
+                                                mostrou que os dois
+                                                monstros iriam se encontrar e pensei que seria "o filme". Porém a
+                                                decepção foi tão
+                                                grande que me arrisco a comparar com o filme da Arlequina. Deveriam ter
+                                                feito o filme em
+                                                duas partes e desenvolver melhor a história. Um encontro tão explosivo
+                                                merecia um filme
+                                                melhor. E a Terra oca? Nem vou entrar nesse detalhe, acho que oca é a
+                                                cabeça de quem fez
+                                                o filme.</p>
+                                            <p><i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                                08/04/2021
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row more_avali">
+                                        <div class="col-12">
+                                            <h1><button type="button" class="btn btn-success botãozinho_2"><i
+                                                        class="fas fa-plus"></i>
+                                                    Carregar mais avaliações</button></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="entrevistas">
+                            <div class="row tittle_3">
+                                <div class="col-12">
+                                    <h1>Entrevistas e Making-Of</h1>
+                                </div>
+                            </div>
+                            <div class="row entrevis_area">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-12 col-lg-4 entrevi_1">
+                                            <iframe width="319.98" height="366"
+                                                src="https://www.youtube.com/embed/Ms3NZo_WHFA"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <h1><span style="font-weight: bold;">Filme:</span> Aves de Rapina: Arlequina
+                                                e Sua
+                                                Emancipação Fantabulosa</h1>
+                                            <p><span style="font-weight: bold;">Diretor:</span> Cathy Yan</p>
+                                            <p><span style="font-weight: bold;">Roteiro:</span> Christina Hodson</p>
+                                            <p><span style="font-weight: bold;">Estreia:</span> 2020</p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-4 entrevi_2">
+                                            <iframe width="319.98" height="366"
+                                                src="https://www.youtube.com/embed/GvySWVlwD6A?list=PLB_vaUBxT31Utci_Hyk7BznPpolgiefBC"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <h1><span style="font-weight: bold;">Filme:</span> Bad Boys Para Sempre</h1>
+                                            <p><span style="font-weight: bold;">Diretor:</span> Bilall Fallah, Adil El
+                                                Arbi</p>
+                                            <p><span style="font-weight: bold;">Roteiro:</span> Joe Carnahan, Chris
+                                                Bremner, Peter
+                                                Craig, David Guggenheim, Anthony Tambakis</p>
+                                            <p><span style="font-weight: bold;">Estreia:</span> 2020</p>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12 col-lg-4 entrevi_3">
+                                            <iframe width="319.98" height="366"
+                                                src="https://www.youtube.com/embed/PsHR31poNLs"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen></iframe>
+                                            <h1><span style="font-weight: bold;">Filme:</span> Jumanji: Próxima Fase
+                                            </h1>
+                                            <p><span style="font-weight: bold;">Diretor:</span> Jake Kasdan</p>
+                                            <p><span style="font-weight: bold;">Roteiro:</span> Jake kasdan, Jeff
+                                                Pinkner, Scott
+                                                Rosenberg</p>
+                                            <p><span style="font-weight: bold;">Estreia:</span> 2019</p>
+                                        </div>
+                                    </div>
+                                    <div class="row more_entrevi">
+                                        <div class="col-12">
+                                            <h1><button type="button" class="btn btn-success botãozinho_3"><i
+                                                        class="fas fa-plus"></i>
+                                                    Carregar mais
+                                                    entrevistas</button></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="novidades">
+                            <div class="row tittle_4">
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6 col-lg-6">
+                                            <h1>Novidades</h1>
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 mat_1">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                                                    <img class="img_mat1"
+                                                                        src="/imgs/Captain-America.jpg" alt="">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                                                    <h1 class="tittle_nov">Capitão América 4 está em
+                                                                        desenvolvimento
+                                                                        com
+                                                                        showrunner de Falcão e o Soldado Invernal</h1>
+                                                                    <p>O quarto filme do Capitão América já está sendo
+                                                                        desenvolvido
+                                                                        pela
+                                                                        Marvel e, dessa vez, conta com o showrunner de
+                                                                        Falcão e o
+                                                                        Soldado Invernal, Malcolm Spellman.
+
+                                                                        O criador e roteirista chefe da série do Disney+
+                                                                        será o
+                                                                        co-roteirista de Capitão América 4 ao lado de
+                                                                        Dalan Musson,
+                                                                        também responsável pela trama de Falcão e o
+                                                                        Soldado
+                                                                        Invernal.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 mat_1">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                                                    <img class="img_mat1" src="/imgs/Bond_JamesBond.jpg"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                                                    <h1 class="tittle_nov">Daniel Craig e Mads Mikkelsen
+                                                                        queriam a cena
+                                                                        de tortura de 007 – Cassino Royale ainda pior
+                                                                    </h1>
+                                                                    <p>007 – Cassino Royale foi o primeiro filme com
+                                                                        Daniel Craig no
+                                                                        papel de James Bond e, mesmo 14 anos depois, o
+                                                                        longa é lembrado
+                                                                        também por uma das cenas de torturas mais
+                                                                        impactantes da
+                                                                        franquia. O momento é protagonizado pelo espião
+                                                                        junto com o
+                                                                        vilão Le Chiffre, vivido por Mads Mikkelsen. No
+                                                                        entanto, segundo
+                                                                        o ator, a cena poderia ser ainda pior do que o
+                                                                        que foi mostrado.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-12 col-lg-12 mat_1">
+                                                            <div class="row">
+                                                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                                                    <img class="img_mat1" src="/imgs/mortal-kombat.jpg"
+                                                                        alt="">
+                                                                </div>
+                                                                <div class="col-sm-12 col-md-12 col-lg-6">
+                                                                    <h1 class="tittle_nov">Mortal Kombat é a “melhor
+                                                                        adaptação de video
+                                                                        game de todos os tempos”, diz Mehcad Brooks</h1>
+                                                                    <p>O novo filme de Mortal Kombat chegará em breve e
+                                                                        se depender de
+                                                                        Mehcad Brooks, o Jax do longa, as expectativas
+                                                                        devem ficar bem
+                                                                        altas.
+
+                                                                        Em entrevista à EW, Brooks falou sobre a nova
+                                                                        adaptação e
+                                                                        elogiou bastante o trabalho do diretor Simon
+                                                                        McQuoid. Para ele,
+                                                                        os fãs perceberão que o universo criado para à
+                                                                        produção, assim
+                                                                        como os personagens, estão à altura do que era
+                                                                        esperado. O ator
+                                                                        é um fã declarado da saga e disse que as suas
+                                                                        próprias
+                                                                        expectativas foram superadas. “Simon McQuoid
+                                                                        levou o nível
+                                                                        cinematográfico para muito alto”, disse.
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-6 col-lg-6">
+                                            <h2>Sobre</h2>
+                                            <p>Este portal foi desenvolvido como um trabalho para a disciplina de
+                                                Desenvolvimento de
+                                                Interfaces Web da Universidade PUC MINAS.</p>
+                                            <h3>Editorial</h3>
+                                            <p><span style="font-weight: bold;">Redação:</span> João Vitor Reis Vilela
+                                                de Castro.</p>
+                                            <p><span style="font-weight: bold;">Pesquisa:</span> João Vitor Reis Vilela
+                                                de Castro.</p>
+                                            <p><span style="font-weight: bold;">Gerente geral:</span> João Vitor Reis
+                                                Vilela de Castro.
+                                            </p>
+                                            <h4>Redes sociais:</h4>
+                                            <p class="social_midias"><a href=""><i
+                                                        class="fab fa-facebook-square"></i></a> <a href=""><i
+                                                        class="fab fa-twitter"></i></a> <a href=""><i
+                                                        class="fab fa-instagram"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </main>
+
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-sm-12 col-md-10 col-lg-10">
+                        Copyright 2021 - Disciplina de Desenvolvimento de Interfaces Web - <span
+                            style="font-weight: bold;">ICEI PUC MINAS</span>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-2 footer_logo">
+                        <img class="footer_img" src="/imgs/Logo_opc2_red.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

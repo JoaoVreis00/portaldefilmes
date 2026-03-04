@@ -1,0 +1,213 @@
+.header{
+    background-color: black;
+}
+.logo{
+    width: 100px;
+    justify-content: center;
+}
+.menu_area{
+   margin-top: 20px;
+   margin-bottom: 15px;
+   justify-content: start;
+}
+.menu_area a{
+    background-color: black !important;
+    color: white !important;
+}
+.menu_area a:hover{
+    background-color: rgba(158, 140, 140, 0.808) !important;
+}
+.nav_area{
+    background-color: black !important;
+}
+.navbar-toggler{
+    background-color: white;
+}
+.browser{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.browser_area{
+    background-color: black !important;
+}
+.main{
+    background-color:black;
+    color: white;
+    
+}
+.main h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.card{
+    background-color: rgb(34, 32, 32);
+    border-radius: 0%;
+}
+.card img{
+    margin-top: 10px;
+}
+.vid1{
+    margin-bottom: 15px;
+}
+.destaque h1{
+    font-size: 2em;
+    text-align: start;
+}
+.drop{
+    font-size: 1.3em;
+    text-align: end;
+}
+.drop .btn-secondary{
+    background-color: #198754;
+}
+.dropdown-menu{
+    background-color:  #198754;
+}
+.imgs img{
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 15px;
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+    .imgs img{
+        margin-bottom: 5px;
+        width: 75%;
+        height: 400px;
+        display: block;
+        padding: 20px;
+    }
+}
+@media screen and (min-width:601px) and (max-width:767px) {
+    .imgs img{
+        margin-bottom: 5px;
+        width: 100%;
+        display: block;
+        padding: 100px;
+    }
+}
+@media screen and (min-width:390px) and (max-width:600px) {
+    .imgs img{
+        margin-bottom: 5px;
+        width: 100%;
+        display: block;
+        padding: 50px;
+    }
+}
+@media screen and (max-width:389px) {
+    .imgs img{
+        margin-bottom: 20px;
+        width: 100%;
+        display: block;
+        padding: 20px;
+    }
+}
+.more_movies h1{
+    text-align: end;
+    font-size: 1.3em;
+}
+.botãozinho{
+    background-color: black;
+    margin-top: 5px;
+}
+.tittle_2 h1{
+    font-size: 2em;
+}
+.nome_avali_1 h1{
+    text-align: start;
+    font-size: 1.3em;
+}
+.nome_avali_1 h2{
+    font-size: 2em;
+}
+.nome_avali_2 h1{
+    font-size: 1.3em;
+    text-align: start;
+}
+.nome_avali_2 h2{
+    font-size: 2em;
+}
+.nome_avali_3 h1{
+    font-size: 1.3em;
+    text-align: start;
+}
+.nome_avali_3 h2{
+    font-size: 2em;
+}
+.more_avali h1{
+    font-size: 1.3em;
+    text-align: end;
+    margin-top: 10px;
+}
+.botãozinho_2{
+    background-color: black;
+}
+.tittle_3{
+    margin-top: 10px;
+}
+.tittle_3 h1{
+    font-size: 2em;
+}
+.entrevi_1 h1{
+    font-size: 1.3em;
+    text-align: start;
+}
+.entrevi_2 h1{
+    font-size: 1.3em;
+    text-align: start;
+}
+.entrevi_3 h1{
+    font-size: 1.3em;
+    text-align: start;
+}
+.more_entrevi h1{
+    font-size: 1.3em;
+    text-align: end;
+}
+.botãozinho_3{
+    background-color: black;
+}
+.tittle_4{
+    margin-top: 10px;
+}
+.tittle_4 h1{
+    font-size: 2em;
+    text-align: start;
+}
+.tittle_4 h2{
+    text-align: start;
+    font-size: 2em;
+}
+.tittle_4 h3{
+    text-align: start;
+    font-size: 2em;
+}
+.tittle_4 h4{
+    text-align: start;
+    font-size: 1.3em;
+}
+.tittle_4 .social_midias{
+    font-size: 1.5em;
+}
+.tittle_4 .social_midias a{
+    color: white;
+}
+.mat_1 .img_mat1{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.mat_1 .tittle_nov{
+    font-size: 1.3em;
+}
+.footer{
+    background-color:#313332;
+    padding: 15px;
+    color: white;
+}
+.footer_img{
+    width: 100px;
+}
